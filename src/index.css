@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "CreatoDisplay-Regular";
+  src: local("CreatoDisplay-Regular"), url("./assets/fonts/CreatoDisplay-Regular.otf") format("opentype");
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  z-index: -2;
+  background-color: white;
+  background-image: radial-gradient(60% 120% at 50% 50%, hsla(0, 0.00%, 100.00%, 0.00) 0%, rgba(126, 170, 253, 0.43) 100%);
+  font-family: "CreatoDisplay-Regular";
+}

@@ -1,0 +1,50 @@
+.homepage-main-content {
+    width: 98vw;
+    height: auto;
+    margin-top: 190px;
+}
+
+.homepage-main-content .section-1 {
+    text-align: center;
+    margin: 0 auto;
+    width: 55%;
+}
+
+.homepage-main-content .section-1 h1 {
+    font-size: 50px;
+}
+
+.homepage-main-content .section-1 p {
+    font-size: 20px;
+    color:rgb(68, 68, 68);
+}
+
+.homepage-main-content .section-1 button {
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(26, 106, 255);
+    padding: 15px 30px;
+    color: #ffffff;
+    font-family: "CreatoDisplay-Regular";
+    margin-top: 20px;
+}
+
+.homepage-main-content .section-1 button::after {
+    content: '→';
+    margin-left: 8px;
+    font-size: 25px;
+}
+
+.homepage-main-content .dashboard-image {
+    margin-top: 70px;
+}
+
+.homepage-main-content .dashboard-image img {
+    display: block;
+    margin: 0 auto;
+    width: 90vw;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.27);
+}
