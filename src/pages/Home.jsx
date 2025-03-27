@@ -6,6 +6,7 @@ import chart from '../assets/icons/chart-simple-solid.svg'
 import hourglass from '../assets/icons/hourglass-start-solid.svg'
 import database from '../assets/icons/database-solid.svg'
 import link from '../assets/icons/link-solid.svg'
+import graphImage from '../assets/images/graphs-img.png'
 
 const Home = () => {
 
@@ -54,7 +55,7 @@ const Home = () => {
                 <img src={dashboard} alt='dashboard' />
             </div>
             <div className='section-2'>
-                <div className='features'>Features</div>
+                <div className='section-name'>Features</div>
                 <h1>Maximize Productivity with Our Cloud Software</h1>
                 <p>Stay ahead with our all-in-one solution for ERP, CRM, school/college management,
                     sales, and more. Automate processes, manage operations efficiently, and boost your
@@ -69,6 +70,21 @@ const Home = () => {
                     <p>{feature.paragraph}</p>
                 </div>
                 ))}
+            </div>
+            <div className='analytics-section'>
+                <div className='section-name'>Analytics & Insights</div>
+                <div className='content-box'>
+                    <div className='left-text-box'>
+                        <h2>Visualize Your Growth with Interactive Graphs</h2>
+                        <p>Transform complex data into clear, actionable insights with our powerful graph
+                            analytics. Track ad performance, monitor lead conversion trends, and measure key
+                            metrics—all in one place. Our dynamic bar charts, line graphs, and radar charts
+                            help you spot patterns, optimize strategies, and make data-backed decisions with
+                            confidence.</p>
+                        <button>Explore More</button>
+                    </div>
+                    <img src={graphImage} alt='graph-analytics-image' />
+                </div>
             </div>
         </div>
     )
