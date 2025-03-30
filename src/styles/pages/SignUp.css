@@ -1,0 +1,166 @@
+.sign-up-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+}
+
+.left-content {
+    width: 50vw;
+    height: 100vh;
+    background-color: rgb(26, 106, 255);
+}
+
+.right-content {
+    display: grid;
+    place-items: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+.right-content .content{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.right-content .content .sign-up-method {
+    text-align: center
+}
+
+.right-content .content .sign-up-method-button img{
+    width: 20px;
+    height: 20px;
+}
+
+.right-content .content .sign-up-method-button {
+    display: inline-flex;
+    align-items: center;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    justify-content: center;
+    gap: 10px;
+    background: #ffffff;
+    border: 2px solid rgb(187, 187, 187);
+    font-family: "CreatoDisplay-Regular";
+}
+
+.right-content .content .sign-up-method-button p {
+    color: rgb(102, 102, 102);
+    font-family: "CreatoDisplay-Regular";
+}
+
+.right-content .content .logo-section {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.right-content .content .logo-section h2{
+    font-size: 30px;
+}
+
+.right-content .content .sign-up-box h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.right-content .content .sign-up-box h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color:rgb(121, 121, 121);
+}
+
+.right-content .content .sign-up-box {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.right-content .content .logo-section img {
+    width: 50px;
+    height: 50px;
+}
+
+.or-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.or-divider::before, .or-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.or-divider span {
+    white-space: nowrap;
+    font-size: 16px;
+    color: #666;
+    margin: 20px 0;
+}
+
+form {
+    margin: 0 auto;
+}
+
+.input-box .icon {
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 20px;
+    filter: grayscale(100%) brightness(50%);
+}
+
+.input-box {
+	position: relative;
+	margin: 15px 0;
+}
+
+.input-box input {
+	width: 80%;
+	padding: 13px 45px;
+	background: #eee;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	font-weight: 500;
+    background: #ffffff;
+    border: 2px solid rgb(187,187,187);
+}
+
+form img {
+    width: 20px;
+    height: 20px;
+}
+
+form .submit-button {
+    font-family: "CreatoDisplay-Regular";
+    border-radius: 8px;
+    border: none;
+    background: rgb(26, 106, 255);
+    font-size: 18px;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.sign-in-route {
+    margin-top: 25px;
+}
+
+.sign-in-route a {
+    margin-left: 5px;
+}

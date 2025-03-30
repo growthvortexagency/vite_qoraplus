@@ -1,5 +1,6 @@
 import '../styles/components/Navbar.css'
 import logo from '../assets/images/logo.webp'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -19,7 +20,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className='navbar-buttons'>
-          <button className='signup'>Sign Up</button>
+          <Link to='/sign-up'><button className='signup'>Sign Up</button></Link>
           <button className='contactus'>Get Started</button>
         </div>
       </div>
