@@ -1,0 +1,366 @@
+.sign-up-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+}
+
+.left-content {
+    width: 50vw;
+    height: auto;
+    background-color: rgb(26, 106, 255);
+}
+
+.right-content {
+    display: grid;
+    place-items: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+.right-content .content{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.right-content .content .sign-up-method {
+    text-align: center
+}
+
+.right-content .content .sign-up-method-button img{
+    width: 20px;
+    height: 20px;
+}
+
+.right-content .content .sign-up-method-button {
+    display: inline-flex;
+    align-items: center;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    justify-content: center;
+    gap: 10px;
+    background: #ffffff;
+    border: 2px solid rgb(187, 187, 187);
+    font-family: "CreatoDisplay-Regular";
+}
+
+.right-content .content .sign-up-method-button p {
+    color: rgb(102, 102, 102);
+    font-family: "CreatoDisplay-Regular";
+}
+
+.right-content .content .logo-section {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.right-content .content .logo-section h2{
+    font-size: 30px;
+}
+
+.right-content .content .sign-up-box h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.right-content .content .sign-up-box h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color:rgb(121, 121, 121);
+}
+
+.right-content .content .sign-up-box {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.right-content .content .logo-section img {
+    width: 50px;
+    height: 50px;
+}
+
+.or-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.or-divider::before, .or-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.or-divider span {
+    white-space: nowrap;
+    font-size: 16px;
+    color: #666;
+    margin: 20px 0;
+}
+
+form {
+    margin: 0 auto;
+}
+
+.input-box .icon {
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 20px;
+    filter: grayscale(100%) brightness(50%);
+}
+
+.input-box {
+	position: relative;
+	margin: 15px 0;
+}
+
+.input-box input {
+	width: 80%;
+	padding: 13px 45px;
+	background: #eee;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	font-weight: 500;
+    background: #ffffff;
+    border: 2px solid rgb(187,187,187);
+}
+
+form img {
+    width: 20px;
+    height: 20px;
+}
+
+form .submit-button {
+    font-family: "CreatoDisplay-Regular";
+    border-radius: 8px;
+    border: none;
+    background: rgb(26, 106, 255);
+    font-size: 18px;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.sign-in-route {
+    margin-top: 25px;
+}
+
+.sign-in-route p {
+    margin-left: 5px;
+    display: inline-block;
+    color: rgb(26, 106, 255);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: "CreatoDisplay-Regular";
+}
+  
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+}
+  
+.checkbox-container input {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+  
+.checkmark {
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+  
+.checkbox-container input:checked + .checkmark {
+    background-color: rgb(26, 106, 255);
+    border-color: rgb(26, 106, 255);
+}
+  
+.checkbox-container input:checked + .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+  
+.forgot-password {
+    display: inline-block;
+    color: rgb(26, 106, 255);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.checkbox-container p {
+    display: inline-block;
+    color: rgb(26, 106, 255);
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.newsletter {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.left-content {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .left-content h2 {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  
+  .left-content p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Features List */
+  .features-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features-list li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin: 8px 0;
+  }
+  
+  .left-icon {
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+  
+  .left-image {
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 960px) {
+    .left-content {
+        display: none;
+    }
+
+    .right-content {
+        width: 100vw;
+    }
+
+    .right-content .content .sign-up-box {
+        width: 100%;
+    }
+
+  }
+
+  @media (max-width: 450px) {
+    .right-content .content .sign-up-method-button img{
+        width: 15px;
+        height: 15px;
+    }
+
+    .right-content .content .logo-section h2{
+        font-size: 25px;
+    }
+
+    .right-content .content .logo-section img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .right-content .content .sign-up-box h2 {
+        font-size: 25px;
+    }
+    
+    .right-content .content .sign-up-box h3 {
+        font-size: 11px;
+    }
+
+    .input-box input {
+        width: 80%;
+        padding: 13px 20px 13px 30px;
+        font-size: 14px;
+    }
+
+    .remember-forgot {
+        width: 95%;
+        justify-content: space-between;
+        margin: 10px auto;
+    }
+  }
+
+  @media (max-width: 350px) {
+
+    .remember-forgot {
+        width: 95%;
+        justify-content: space-between;
+        margin: 10px auto;
+    }
+
+    .newsletter {
+        font-size: 15px;
+    }
+    
+    .checkbox-container {
+        font-size: 15px;
+    }
+
+    .checkbox-container p {
+        font-size: 15px;
+    }
+
+    form .submit-button {
+        margin-top: 10px;
+    }
+  }

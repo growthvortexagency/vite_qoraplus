@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "CreatoDisplay-Regular";
+  src: local("CreatoDisplay-Regular"), url("./assets/fonts/CreatoDisplay-Regular.otf") format("opentype");
+  font-weight: normal;
+}
+
+/* body {
+  margin: 0;
+  padding: 0;
+  z-index: -2;
+  background-color: white;
+  background-image: radial-gradient(60% 120% at 50% 50%, hsla(0, 0.00%, 100.00%, 0.00) 0%, rgba(126, 170, 253, 0.43) 100%);
+  font-family: "CreatoDisplay-Regular";
+} */
+
+ body {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  background: linear-gradient(-45deg, rgb(255, 255, 255), rgba(30, 95, 215, 0.72), rgb(255, 255, 255));
+  background-size: 400% 400%;
+  animation: animate 15s ease infinite;
+  font-family: "CreatoDisplay-Regular";
+ }
+ 
+ @keyframes animate {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 100%;
+  }
+ }
