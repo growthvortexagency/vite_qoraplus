@@ -2,7 +2,10 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
-import SignUp from './pages/SignUp'
+import SignUp from './pages/auth/SignUp'
+import SignIn from './pages/auth/SignIn'
+import PasswordReset from './pages/auth/PasswordReset'
+import TermsAndConditions from './pages/TermsAndConditions';
 
 
 function AppContent() {
@@ -10,6 +13,9 @@ function AppContent() {
 
   const noHeaderNavbarRoutes = [
     "/sign-up",
+    "/sign-in", 
+    "/password-reset", 
+    "/terms-and-conditions", 
   ];
 
   const shouldHideNavbar = noHeaderNavbarRoutes.includes(location.pathname);
@@ -20,6 +26,9 @@ function AppContent() {
       <Routes>
         <Route path="" element={<Home />} />
         <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/password-reset" element={<PasswordReset />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
       </Routes>
     </>
   );

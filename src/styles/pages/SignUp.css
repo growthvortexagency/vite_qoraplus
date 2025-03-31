@@ -155,12 +155,136 @@ form .submit-button {
     color: #ffffff;
     width: 100%;
     padding: 10px 0;
+    cursor: pointer;
 }
 
 .sign-in-route {
     margin-top: 25px;
 }
 
-.sign-in-route a {
+.sign-in-route p {
+    margin-left: 5px;
+    display: inline-block;
+    color: rgb(26, 106, 255);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: "CreatoDisplay-Regular";
+}
+  
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+}
+  
+.checkbox-container input {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+  
+.checkmark {
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+  
+.checkbox-container input:checked + .checkmark {
+    background-color: rgb(26, 106, 255);
+    border-color: rgb(26, 106, 255);
+}
+  
+.checkbox-container input:checked + .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+  
+.forgot-password {
+    display: inline-block;
+    color: rgb(26, 106, 255);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.checkbox-container p {
+    display: inline-block;
+    color: rgb(26, 106, 255);
+    font-weight: 600;
     margin-left: 5px;
 }
+
+.newsletter {
+    margin-bottom: 15px;
+}
+
+.left-content {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .left-content h2 {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  
+  .left-content p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Features List */
+  .features-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features-list li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin: 8px 0;
+  }
+  
+  .left-icon {
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+  
+  /* Business Dashboard Image */
+  .left-image {
+    max-width: 650px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
